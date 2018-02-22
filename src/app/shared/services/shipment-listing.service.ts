@@ -52,7 +52,7 @@ export class ShipmentListingService {
         let shipment2 = response[1];
         shipment2.truckId="truck1";
         let shipment3 = response[2];
-        shipment3.truckId="truck0";
+        shipment3.truckId="truck2";
        let myarray = [shipment1, shipment2, shipment3];
         return this.shipmentListResponseHandler(myarray);
       }).toPromise().then(arrayOfPromises => {

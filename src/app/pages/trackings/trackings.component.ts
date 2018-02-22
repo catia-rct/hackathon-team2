@@ -101,6 +101,7 @@ export class TrackingsComponent implements OnInit, OnDestroy, AfterViewInit {
     if (this.mapDataSubscription) {
       this.mapDataSubscription.unsubscribe();
     }
+ 
   }
 
   /**
@@ -125,6 +126,8 @@ export class TrackingsComponent implements OnInit, OnDestroy, AfterViewInit {
         });
       });
 
+      this.locationEvents = [];
+      this.poly_lines = []
       this.getLocationEventsDataForShipmentUnit();
       // else it is a shipment set the view mode and request the shipment data
     } else {
@@ -153,10 +156,12 @@ export class TrackingsComponent implements OnInit, OnDestroy, AfterViewInit {
   private gatherLocationEventsDataForShipmentUnitWithInterval() {
     this.mapRefreshInterval = setInterval(() => {
       this.getLocationEventsDataForShipmentUnit();
-    }, 15000);
+    }, 2000);
   }
 
   private getLocationEventsDataForShipmentUnit() {
+    this.locationEvents = [];
+    this.poly_lines = []
     this.mapDataSubscription = this.shipmentsService.getLocationEventsForHackathon(this.shipUnitID).toArray().subscribe(
       results => {
         console.log('results');
@@ -222,7 +227,7 @@ export class TrackingsComponent implements OnInit, OnDestroy, AfterViewInit {
         // add the vehicle icon at the end of the polyline path
         if (amount_loc === (amount_loc_events - 1)) {
           let poly_icon: any = {
-            path: this.truck_left_symbol,
+            path:'',
             scale: 1.2,
             strokeOpacity: 1,
             fillColor: poly_line_color,
