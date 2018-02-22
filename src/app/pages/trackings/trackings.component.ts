@@ -53,8 +53,8 @@ export class TrackingsComponent implements OnInit, OnDestroy, AfterViewInit {
               private shipmentsService: ShipmentsService,
               private modalService: NgbModal,
               private location: Location) {
-    //this.refreshInterval = setInterval(
-      this.handleNewRouteParams.bind(this, this.route.snapshot.params);//, this.INTERVALS.refreshInterval);
+    this.refreshInterval = setInterval(
+      this.handleNewRouteParams.bind(this, this.route.snapshot.params), this.INTERVALS.refreshInterval);
   }
 
 
@@ -151,9 +151,9 @@ export class TrackingsComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   private gatherLocationEventsDataForShipmentUnitWithInterval() {
-   // this.mapRefreshInterval = setInterval(() => {
+    this.mapRefreshInterval = setInterval(() => {
       this.getLocationEventsDataForShipmentUnit();
-  //  }, 10000);
+    }, 15000);
   }
 
   private getLocationEventsDataForShipmentUnit() {
