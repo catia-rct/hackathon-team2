@@ -1,0 +1,73 @@
+$border-gray: 1px solid #c9c9c9;
+
+.modal-body {
+  padding: 20px;
+  color: black;
+  .row:not(:last-child) div[class*='col-'] {
+    border-bottom: $border-gray;
+  }
+
+  .side-borders {
+    border-left: $border-gray;
+    border-right: $border-gray;
+  }
+
+  .no-bottom-border {
+    border-bottom: none;
+  }
+}
+
+.go-to-details-icon {
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: #848591;
+  color: #ffffff;
+  .close span {
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.green-text { color: #3c763d; }
+
+
+.reroute-icon {
+  display: inline-block;
+  width: 22px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  transform: rotate(180deg);
+  cursor: pointer;
+  &.completed {
+    background: url('../../../../../assets/images/detour_green.png');
+    background-size: contain;
+  }
+  &.open {
+    background: url('../../../../../assets/images/detour_yellow.png');
+    background-size: contain;
+  }
+}
+
+
+.tab-content-container {
+  padding: 10px;
+  color: black;
+  .tab-card {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px #c9c9c9;
+    > div {
+      padding: 10px 0;
+    }
+    .tab-card-title {
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+  }
+  .go-to-details-icon {
+    cursor: pointer;
+  }
+}
+

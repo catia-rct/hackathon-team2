@@ -1,0 +1,33 @@
+<div class="tab-content-container shipping-details-container" *ngIf="data">
+    <div class="tab-card">
+        <div class="tab-card-title bordered">Main Info</div>
+        <div class="row bordered">
+            <div class="col-6">UTN</div>
+            <div class="col-6"><b>{{data.UTN || ''}}</b></div>
+        </div>
+        <div class="row bordered">
+            <div class="col-6">Export File Number</div>
+            <div class="col-6"><b>{{data.ExportFileNumber || ''}}</b></div>
+        </div>
+        <div class="row bordered">
+            <div class="col-6">Shipment Type</div>
+            <div class="col-6"><b>{{data.shipmentType || ''}}</b></div>
+        </div>
+        <div class="row bordered">
+            <div class="col-6">Issued place</div>
+            <div class="col-6"><b>{{data.IssuedPlace || ''}}</b></div>
+        </div>
+        <div class="row bordered">
+            <div class="col-6">Issued date</div>
+            <div class="col-6"><b>{{data.IssuedDate || ''}}</b></div>
+        </div>
+        <div class="row bordered">
+            <div class="col-6">Incoterm/Location</div>
+            <div class="col-6"><b>{{data.IncotermLocation || ''}}</b></div>
+        </div>
+        <div class="row">
+            <div class="col-6">Movement Type</div>
+            <div class="col-6"><b>{{data.MovementType || ''}}</b></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="modal-header">
+    <span>{{ modalHeader }}</span>
+    <button class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="row separation">
+        <div class="col-md-2 text-center"><span class="status-icon-container"><span
+                class="reroute-icon {{data.rerouteEvent.Status}}"></span></span></div>
+        <div class="col-md-10">
+            <h4 class="title-modal">{{ data.Name}}</h4>
+            <div>Estimated: {{ data.rerouteEvent.ETA}} <span class="delay-container">Delayed + 1:00</span></div>
+            <div class="green-text">Actual Location: {{ data.rerouteEvent.Origin }}</div>
+            <div class="green-text">Destination Location: {{ data.rerouteEvent.Destination }}</div>
+            <div>Mode of Transport: {{ data.rerouteEvent.ModeOfTransport }}</div>
+            <div>Next Stage: {{ data.rerouteEvent.NextStage }}</div>
+            <div>Description:
+                <div>
+                    <i>{{ data.rerouteEvent.ReroutingDescription }}</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

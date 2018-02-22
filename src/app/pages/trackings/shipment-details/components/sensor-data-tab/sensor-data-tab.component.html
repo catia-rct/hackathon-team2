@@ -1,0 +1,42 @@
+<div class="shipping-details-container">
+  <!--  <div class="row graphic-container" *ngIf="shockEventsData.datasets[0].data.length">
+        <div class="col-2">
+            <div class="graphic-info-container">
+                <span class="graphic-icon accelaration"></span>
+                <div class="text-center">Current value: {{currentShockValue}}</div>
+            </div>
+        </div>
+        <div class="col-8">
+            <chart type="line" [data]="shockEventsData" [options]="shockOptions"></chart>
+        </div>
+    </div> -->
+    <div class="row graphic-container" *ngIf="temperatureEventsData.datasets[0].data.length">
+        <div class="col-2">
+            <div class="graphic-info-container">
+                <span class="graphic-icon temperature"></span>
+                <div class="text-center">Current value: {{currentTemperatureValue}}</div>
+            </div>
+        </div>
+        <div class="col-8">
+            <chart type="line" [data]="temperatureEventsData" [options]="temperatureOptions"></chart>
+        </div>
+
+    </div>
+    <div class="row">
+        
+        <div class="col-8" style="margin-left: 40px;">
+           <img src="assets/images/alert-icon.png"><span> Alert! Temperature high!</span>
+        </div>    
+    </div>
+    <div class="row graphic-container" *ngIf="humidityEventsData.datasets[0].data.length">
+        <div class="col-2">
+            <div class="graphic-info-container">
+                <span class="graphic-icon humidity"></span>
+                <div class="text-center">Current value: {{currentHumidityValue}}</div>
+            </div>
+        </div>
+        <div class="col-8">
+            <chart type="line" [data]="humidityEventsData" [options]="humidityOptions"></chart>
+        </div>
+    </div>
+</div>

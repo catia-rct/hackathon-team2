@@ -1,0 +1,12 @@
+<nb-tabset (changeTab)="changeTabHandler($event)" *ngIf="currentViewMode">
+    <nb-tab tabTitle="Shipping Detail" *ngIf="currentViewMode === MILESTONE_VIEW_MODES.shipment">
+        <shiping-details-tab [data]="data"></shiping-details-tab>
+    </nb-tab>
+    <nb-tab tabTitle="Shipment units" *ngIf="currentViewMode === MILESTONE_VIEW_MODES.shipment">
+        <shipment-units-tab [data]="data"></shipment-units-tab>
+    </nb-tab>
+    <nb-tab tabTitle="Sensor data" *ngIf="currentViewMode === MILESTONE_VIEW_MODES.shipmentUnit">
+        <sensor-data-tab></sensor-data-tab>
+    </nb-tab>
+</nb-tabset>
+

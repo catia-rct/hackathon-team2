@@ -1,0 +1,135 @@
+.milestone-view-wrapper {
+  padding: 20px 70px 0 70px;
+  overflow-y: scroll;
+  border-right: 1px solid #c8c8c8;
+}
+
+.milestone-container {
+  display: flex;
+  margin: 0 0 0 35px;
+  min-height: 100px;
+}
+
+.milestone-info-container {
+  width: 65%;
+  font-size: 14px;
+}
+
+.actual {
+  color: #80ba02;
+}
+
+.milestone-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #363636;
+}
+
+.go-to-details-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.milestone-timeline {
+  display: block;
+  position: relative;
+  z-index: 1;
+
+  margin: 0 20px;
+  border-left: 6px solid #c8c8c8;
+  border-right: 6px solid #c8c8c8;
+  width: 12px;
+
+  &.top-border-curved {
+    border-radius: 6px 6px 0 0;
+  }
+  &.bottom-border-curved {
+    border-radius: 0 0 6px 6px;
+  }
+
+  &.planned {
+    border-color: #C8C8C8;
+  }
+  &.completed {
+    border-color: #A7BF73;
+  }
+
+  &.not-ok {
+    border-color: #D17379;
+  }
+
+  &.in-progress {
+    border-color: #6774A8;
+  }
+
+  .status-indicator {
+    position: absolute;
+    top: 0px;
+    right: -15px;
+    z-index: 1;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+
+
+.reroute-icon {
+  display: inline-block;
+  width: 22px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  transform: rotate(180deg);
+  cursor: pointer;
+  &.completed {
+    background: url("../../../../assets/images/detour_green.png");
+    background-size: contain;
+  }
+  &.open {
+    background: url("../../../../assets/images/detour_yellow.png");
+    background-size: contain;
+  }
+}
+
+.rouotestage-container {
+  position: relative;
+}
+
+.legend-container {
+  position: relative;
+  border-right: 1px solid #c8c8c8;
+
+  .milestone-timeline {
+    margin-top: -20px;
+    z-index: 1;
+    .status-indicator {
+      top: unset;
+      bottom: 0;
+    }
+  }
+  .milestone-container {
+    margin-left: 85px;
+  }
+  .symbols-wrapper {
+    position: absolute;
+    > div { margin-bottom: 5px; }
+    .status-indicator {
+      margin-right: 10px;
+    }
+  }
+  height: 150px;
+  padding: 20px;
+  box-shadow: 0px -2px 8px rgba(93, 93, 93, 0.5);
+  font-size: 12px;
+  .cargo-line {
+    margin-right: 10px;
+  }
+  .cargo-line {
+    display: inline-block;
+    width: 30px;
+    height: 12px;
+    background-color: #c8c8c8;
+  }
+}

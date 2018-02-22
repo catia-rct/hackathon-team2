@@ -1,0 +1,31 @@
+$border-gray: 1px solid #c9c9c9;
+
+.modal-body {
+  padding: 0;
+  color: black;
+  .row:not(:last-child) div[class*='col-'] {
+    border-bottom: $border-gray;
+  }
+
+  .side-borders {
+    border-left: $border-gray;
+    border-right: $border-gray;
+  }
+
+  .no-bottom-border {
+    border-bottom: none;
+  }
+}
+
+.go-to-details-icon {
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: #848591;
+  color: #ffffff;
+  .close span {
+    color: #ffffff;
+    cursor: pointer;
+  }
+}

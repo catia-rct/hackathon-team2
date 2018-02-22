@@ -1,0 +1,21 @@
+<div class="modal-header">
+    <span>Options</span>
+    <button class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body options-modal">
+    <div class="row separation">
+        <div class="col-md-2 text-left"><span class="status-icon-container"><img src="../../../../../assets/images/ConnectionAirportRed.png" class="status-icon"/></span></div>
+        <div class="col-md-10">
+            <h4 class="title-modal">{{ modalData.name }}</h4>
+            <div>Estimated: {{ modalData.estimate }} <span class="delay-container" *ngIf="this.modalData.delay != 0">Delayed +{{ delay }}</span></div>
+            <div class="green-text">Actual Location: {{ modalData.location }}</div>
+        </div>
+    </div>
+    <h5 class="title-modal row separation">Choose one of the following options:</h5>
+    <button type="button" class="custom-full-btn" (click)="loadReroutePopup()">Take next available flight at origin gateway</button>
+    <button type="button" class="custom-full-btn" >Initiate new shipment</button>
+    <button type="button" class="custom-full-btn" >Re-route to different outbound gateway</button>
+    <button type="button" class="custom-full-btn cancel-btn" (click)="closeModal()"><span class="ion-reply"></span> Cancel</button>
+</div>

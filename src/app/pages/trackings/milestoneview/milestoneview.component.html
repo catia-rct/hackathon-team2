@@ -1,0 +1,88 @@
+<div class="milestone-view-wrapper" *ngIf="routeStages">
+    <div class="rouotestage-container" *ngFor="let routeStage of routeStages; let firstRouteStage=first; let lastRouteStage=last; let routeStageIndex = index">
+        <span class="reroute-icon {{routeStage.rerouteEvent.Status}}"
+              *ngIf="routeStage.rerouteEvent"
+              (click)="openRerouteEventInfoPopup(routeStage)"
+              title="Rerouting Event">
+        </span>
+        <div *ngFor="let milestone of routeStage.milestones; let firstMileStone=first; let lastMilestone=last; let milestoneIndex = index">
+            <!--Display every milestone except the last one-->
+            <div class="milestone-container" *ngIf="!(lastRouteStage && lastMilestone)">
+                <span class="milestone-icon {{milestone.icon}}"></span>
+                <div class="milestone-timeline {{STATUS_STYLE_MAPING[milestone.MilestoneStatus]}}"
+                     [class.top-border-curved]="firstRouteStage && firstMileStone"
+                >
+                    <span *ngIf="!(firstMileStone && firstRouteStage)"
+                          class="status-indicator {{STATUS_STYLE_MAPING[milestone.MilestoneStatus]}}"
+                    >
+                    </span>
+                </div>
+                <div class="milestone-info-container">
+                    <span class="milestone-title">{{milestone.Name}}
+                        <img class="go-to-details-icon"
+                             *ngIf="currentDataType === MILESTONE_VIEW_MODES.shipment"
+                             src="assets/images/eye-grey.png"
+                             (click)="openShipmentUnitsModal(milestone.MilestoneStatus)"
+                        >
+                    </span>
+                    <div class="estimated">
+                        Estimated: {{milestone.dateEstimated}}
+                        <span class="delay-container"
+                              *ngIf="milestone.delayEvent">Delayed + {{ milestone.delayEvent.dataString }}
+                        </span>
+                    </div>
+                    <div class="actual">
+                        Actual: {{milestone.dateActual}}
+                    </div>
+                    <div class="location">
+                        Location: {{milestone.location?.Name}}
+                    </div>
+                    <button *ngIf="shouldShowOptionsButton(routeStageIndex,milestoneIndex)"
+                            (click)="openOptionsModal(routeStage._id, routeStage, milestone)"
+                            class="btn btn-hero-info btn-tn"
+                            type="button">
+                        <i class="ion-chevron-right"></i> Options
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="legend-container">
+    <div class="symbols-wrapper">
+        <div>
+            <span class="status-indicator planned"> </span>Neutral
+        </div>
+        <div>
+            <span class="status-indicator completed"> </span>Completed
+        </div>
+        <div>
+            <span class="status-indicator not-ok"> </span>Overdue
+        </div>
+        <div>
+            <span class="cargo-line"> </span>Cargo
+        </div>
+    </div>
+    <div *ngFor="let routeStage of routeStages; let firstRouteStage=first; let lastRouteStage=last">
+        <div *ngFor="let milestone of routeStage.milestones; let firstMileStone=first; let lastMilestone=last">
+            <div class="milestone-container" *ngIf="lastMilestone && lastRouteStage">
+                <span class="milestone-icon {{milestone.icon}}"></span>
+                <div class="milestone-timeline bottom-border-curved {{STATUS_STYLE_MAPING[milestone.MilestoneStatus]}}">
+                    <span class="status-indicator {{STATUS_STYLE_MAPING[milestone.MilestoneStatus]}}"></span>
+                </div>
+                <div class="milestone-info-container">
+                    <span class="milestone-title">{{milestone.Name}}</span>
+                    <div class="estimated">
+                        Estimated: {{milestone.dateEstimated}}
+                    </div>
+                    <div class="actual">
+                        Actual: {{milestone.dateActual}}
+                    </div>
+                    <div class="location">
+                        Location: {{milestone.location?.Name}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

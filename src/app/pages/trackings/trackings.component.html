@@ -1,0 +1,20 @@
+<div class="row white-pad">
+    <div class="col-md-12">
+        <div class="white-pad tracking-header">
+            <div>
+                <button (click)="goBack()" class="btn btn-hero-info btn-tn" type="button">
+                    <i class="ion-chevron-left"></i> Back
+                </button>
+                <h1><span class="trackings-icon"></span>{{data?.Name || ''}}</h1>
+            </div>
+        </div>
+       <!-- <milestoneview [routeStages]="routeStages" [currentDataType]="currentViewMode" [shipmentId]="packId"></milestoneview> -->
+    </div>
+    
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <map [poly_lines]="poly_lines" [stages_marker]="stages_marker" [mapOptions]="testConfig"></map>
+        <shipment-details [data]="data"></shipment-details>
+    </div>
+</div>

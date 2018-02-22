@@ -1,0 +1,38 @@
+.menu-sprite-icons {
+  width: 24px !important;
+  height: 24px !important;
+  background: url("../../../assets/images/menu-icons-sprite.png") no-repeat;
+
+  &.dashboard { background-position: 0 0; }
+  &.plans { background-position: 0 -24px; }
+  &.quotations { background-position: -24px -24px; }
+  &.booking { background-position: 0 -48px; }
+  &.invoices { background-position: -24px -48px; }
+  &.trackings { background-position: 0 -72px; }
+  &.reports { background-position: 0 -96px; }
+  &.newsfeed { background-position: -24px -96px; }
+  &.contacts { background-position: 0 -120px; }
+  &.calendar { background-position: -24px -120px; }
+  &.mailbox { background-position: 0 -144px; }
+}
+
+a.active .menu-sprite-icons {
+  &.dashboard { background-position: -24px 0; }
+  &.trackings { background-position: -24px -72px; }
+}
+
+.header-icons {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+
+  &.faq {
+    background: url('../../../assets/images/faq.png') no-repeat;
+  }
+  &.notifications {
+    background: url('../../../assets/images/not.png') no-repeat;
+  }
+  &.print {
+    background: url('../../../assets/images/print.png') no-repeat;
+  }
+}

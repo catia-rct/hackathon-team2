@@ -1,0 +1,478 @@
+.milestone-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+
+  &.airport-dark-gray {
+    background: url('../../../assets/images/milestoneview/AirportDarkGrey.png') no-repeat;
+  }
+  &.airport-dark-orange {
+    background: url('../../../assets/images/milestoneview/AirportDarkOrange.png') no-repeat;
+  }
+  &.airport-green {
+    background: url('../../../assets/images/milestoneview/AirportGreen.png') no-repeat;
+  }
+  &.airport-light-orange {
+    background: url('../../../assets/images/milestoneview/AirportLightOrange.png') no-repeat;
+  }
+  &.airport-red {
+    background: url('../../../assets/images/milestoneview/AirportRed.png') no-repeat;
+  }
+
+
+
+
+  &.first-airport-dark-gray {
+    background: url('../../../assets/images/milestoneview/FirstAirportDarkGrey.png') no-repeat;
+  }
+  &.first-airport-dark-orange {
+    background: url('../../../assets/images/milestoneview/FirstAirportDarkOrange.png') no-repeat;
+  }
+  &.first-airport-green {
+    background: url('../../../assets/images/milestoneview/FirstAirportGreen.png') no-repeat;
+  }
+  &.first-airport-light-orange {
+    background: url('../../../assets/images/milestoneview/FirstAirportLightOrange.png') no-repeat;
+  }
+  &.first-airport-red {
+    background: url('../../../assets/images/milestoneview/FirstAirportRed.png') no-repeat;
+  }
+
+
+
+
+  &.booking-dark-gray {
+    background: url('../../../assets/images/milestoneview/BookingDarkGrey.png') no-repeat;
+  }
+  &.booking-dark-orange {
+    background: url('../../../assets/images/milestoneview/BookingDarkOrange.png') no-repeat;
+  }
+  &.booking-green {
+    background: url('../../../assets/images/milestoneview/BookingGreen.png') no-repeat;
+  }
+  &.booking-light-orange {
+    background: url('../../../assets/images/milestoneview/BookingLightOrange.png') no-repeat;
+  }
+  &.booking-red {
+    background: url('../../../assets/images/milestoneview/BookingRed.png') no-repeat;
+  }
+  &.connection-airport-dark-gray {
+    background: url('../../../assets/images/milestoneview/ConnectionAirportDarkGrey.png') no-repeat;
+  }
+  &.connection-airport-dark-orange {
+    background: url('../../../assets/images/milestoneview/ConnectionAirportDarkOrange.png') no-repeat;
+  }
+  &.connection-airport-green {
+    background: url('../../../assets/images/milestoneview/ConnectionAirportGreen.png') no-repeat;
+  }
+  &.connection-airport-light-orange {
+    background: url('../../../assets/images/milestoneview/ConnectionAirportLightOrange.png') no-repeat;
+  }
+  &.connection-airport-red {
+    background: url('../../../assets/images/milestoneview/ConnectionAirportRed.png') no-repeat;
+  }
+  &.control-tower-truck-dark-gray {
+    background: url('../../../assets/images/milestoneview/ControlTowerTruckDarkGrey.png') no-repeat;
+  }
+  &.control-tower-truck-dark-orange {
+    background: url('../../../assets/images/milestoneview/ControlTowerTruckDarkOrange.png') no-repeat;
+  }
+  &.control-tower-truck-green {
+    background: url('../../../assets/images/milestoneview/ControlTowerTruckGreen.png') no-repeat;
+  }
+  &.control-tower-truck-light-orange {
+    background: url('../../../assets/images/milestoneview/ControlTowerTruckLightOrange.png') no-repeat;
+  }
+  &.control-tower-truck-red {
+    background: url('../../../assets/images/milestoneview/ControlTowerTruckRed.png') no-repeat;
+  }
+  &.door-dark-gray {
+    background: url('../../../assets/images/milestoneview/DoorDarkGrey.png') no-repeat;
+  }
+  &.door-dark-orange {
+    background: url('../../../assets/images/milestoneview/DoorDarkOrange.png') no-repeat;
+  }
+  &.door-green {
+    background: url('../../../assets/images/milestoneview/DoorGreen.png') no-repeat;
+  }
+  &.door-light-orange {
+    background: url('../../../assets/images/milestoneview/DoorLightOrange.png') no-repeat;
+  }
+  &.door-red {
+    background: url('../../../assets/images/milestoneview/DoorRed.png') no-repeat;
+  }
+
+  &.export-door-dark-gray {
+    background: url('../../../assets/images/milestoneview/ExportDoorDarkGrey.png') no-repeat;
+  }
+  &.export-door-dark-orange {
+    background: url('../../../assets/images/milestoneview/ExportDoorDarkOrange.png') no-repeat;
+  }
+  &.export-door-green {
+    background: url('../../../assets/images/milestoneview/ExportDoorGreen.png') no-repeat;
+  }
+  &.export-door-light-orange {
+    background: url('../../../assets/images/milestoneview/ExportDoorLightOrange.png') no-repeat;
+  }
+  &.export-door-red {
+    background: url('../../../assets/images/milestoneview/ExportDoorRed.png') no-repeat;
+  }
+  &.export-hub-dark-gray {
+    background: url('../../../assets/images/milestoneview/ExportHubDarkGrey.png') no-repeat;
+  }
+  &.export-hub-dark-orange {
+    background: url('../../../assets/images/milestoneview/ExportHubDarkOrange.png') no-repeat;
+  }
+  &.export-hub-green {
+    background: url('../../../assets/images/milestoneview/ExportHubGreen.png') no-repeat;
+  }
+  &.export-hub-light-orange {
+    background: url('../../../assets/images/milestoneview/ExportHubLightOrange.png') no-repeat;
+  }
+  &.export-hub-red {
+    background: url('../../../assets/images/milestoneview/ExportHubRed.png') no-repeat;
+  }
+  &.export-import-clearance-dark-gray {
+    background: url('../../../assets/images/milestoneview/ExportImportClearanceDarkGrey.png') no-repeat;
+  }
+  &.export-import-clearance-dark-orange {
+    background: url('../../../assets/images/milestoneview/ExportImportClearanceDarkOrange.png') no-repeat;
+  }
+  &.export-import-clearance-green {
+    background: url('../../../assets/images/milestoneview/ExportImportClearanceGreen.png') no-repeat;
+  }
+  &.export-import-clearance-light-orange {
+    background: url('../../../assets/images/milestoneview/ExportImportClearanceLightOrange.png') no-repeat;
+  }
+  &.export-import-clearance-red {
+    background: url('../../../assets/images/milestoneview/ExportImportClearanceRed.png') no-repeat;
+  }
+
+  &.export-import-station-dark-gray {
+    background: url('../../../assets/images/milestoneview/ExportImportStationDarkGrey.png') no-repeat;
+  }
+  &.export-import-station-dark-orange {
+    background: url('../../../assets/images/milestoneview/ExportImportStationDarkOrange.png') no-repeat;
+  }
+  &.export-import-station-green {
+    background: url('../../../assets/images/milestoneview/ExportImportStationGreen.png') no-repeat;
+  }
+  &.export-import-station-light-orange {
+    background: url('../../../assets/images/milestoneview/ExportImportStationLightOrange.png') no-repeat;
+  }
+  &.export-import-station-red {
+    background: url('../../../assets/images/milestoneview/ExportImportStationRed.png') no-repeat;
+  }
+
+
+
+  &.export-import-terminal-dark-gray {
+    background: url('../../../assets/images/milestoneview/ExportImportTerminalDarkGrey.png') no-repeat;
+  }
+  &.export-import-terminal-dark-orange {
+    background: url('../../../assets/images/milestoneview/ExportImportTerminalDarkOrange.png') no-repeat;
+  }
+  &.export-import-terminal-green {
+    background: url('../../../assets/images/milestoneview/ExportImportTerminalGreen.png') no-repeat;
+  }
+  &.export-import-terminal-light-orange {
+    background: url('../../../assets/images/milestoneview/ExportImportTerminalLightOrange.png') no-repeat;
+  }
+  &.export-import-terminal-red {
+    background: url('../../../assets/images/milestoneview/ExportImportTerminalRed.png') no-repeat;
+  }
+
+  &.export-port-dark-gray {
+    background: url('../../../assets/images/milestoneview/ExportPortDarkGrey.png') no-repeat;
+  }
+  &.export-port-dark-orange {
+    background: url('../../../assets/images/milestoneview/ExportPortDarkOrange.png') no-repeat;
+  }
+  &.export-port-green {
+    background: url('../../../assets/images/milestoneview/ExportPortGreen.png') no-repeat;
+  }
+  &.export-port-light-orange {
+    background: url('../../../assets/images/milestoneview/ExportPortLightOrange.png') no-repeat;
+  }
+  &.export-port-red {
+    background: url('../../../assets/images/milestoneview/ExportPortRed.png') no-repeat;
+  }
+
+
+  &.export-station-dark-gray {
+    background: url('../../../assets/images/milestoneview/ExportStationDarkGrey.png') no-repeat;
+  }
+  &.export-station-dark-orange {
+    background: url('../../../assets/images/milestoneview/ExportStationDarkOrange.png') no-repeat;
+  }
+  &.export-station-green {
+    background: url('../../../assets/images/milestoneview/ExportStationGreen.png') no-repeat;
+  }
+  &.export-station-light-orange {
+    background: url('../../../assets/images/milestoneview/ExportStationLightOrange.png') no-repeat;
+  }
+  &.export-station-red {
+    background: url('../../../assets/images/milestoneview/ExportStationRed.png') no-repeat;
+  }
+
+
+  &.first-control-tower-truck-dark-gray {
+    background: url('../../../assets/images/milestoneview/FirstControlTowerTruckDarkGrey.png') no-repeat;
+  }
+  &.first-control-tower-truck-dark-orange {
+    background: url('../../../assets/images/milestoneview/FirstControlTowerTruckDarkOrange.png') no-repeat;
+  }
+  &.first-control-tower-truck-green {
+    background: url('../../../assets/images/milestoneview/FirstControlTowerTruckGreen.png') no-repeat;
+  }
+  &.first-control-tower-truck-light-orange {
+    background: url('../../../assets/images/milestoneview/FirstControlTowerTruckLightOrange.png') no-repeat;
+  }
+  &.first-control-tower-truck-red {
+    background: url('../../../assets/images/milestoneview/FirstControlTowerTruckRed.png') no-repeat;
+  }
+
+  &.first-pol-dark-gray {
+    background: url('../../../assets/images/milestoneview/FirstPoLDarkGrey.png') no-repeat;
+  }
+  &.first-pol-dark-orange {
+    background: url('../../../assets/images/milestoneview/FirstPoLDarkOrange.png') no-repeat;
+  }
+  &.first-pol-green {
+    background: url('../../../assets/images/milestoneview/FirstPoLGreen.png') no-repeat;
+  }
+  &.first-pol-light-orange {
+    background: url('../../../assets/images/milestoneview/FirstPoLLightOrange.png') no-repeat;
+  }
+  &.first-pol-red {
+    background: url('../../../assets/images/milestoneview/FirstPoLRed.png') no-repeat;
+  }
+
+
+  &.import-door-dark-gray {
+    background: url('../../../assets/images/milestoneview/ImportDoorDarkGrey.png') no-repeat;
+  }
+  &.import-door-dark-orange {
+    background: url('../../../assets/images/milestoneview/ImportDoorDarkOrange.png') no-repeat;
+  }
+  &.import-door-green {
+    background: url('../../../assets/images/milestoneview/ImportDoorGreen.png') no-repeat;
+  }
+  &.import-door-light-orange {
+    background: url('../../../assets/images/milestoneview/ImportDoorLightOrange.png') no-repeat;
+  }
+  &.import-door-red {
+    background: url('../../../assets/images/milestoneview/ImportDoorRed.png') no-repeat;
+  }
+
+  &.import-hub-dark-gray {
+    background: url('../../../assets/images/milestoneview/ImportHubDarkGrey.png') no-repeat;
+  }
+  &.import-hub-dark-orange {
+    background: url('../../../assets/images/milestoneview/ImportHubDarkOrange.png') no-repeat;
+  }
+  &.import-hub-green {
+    background: url('../../../assets/images/milestoneview/ImportHubGreen.png') no-repeat;
+  }
+  &.import-hub-light-orange {
+    background: url('../../../assets/images/milestoneview/ImportHubLightOrange.png') no-repeat;
+  }
+  &.import-hub-red {
+    background: url('../../../assets/images/milestoneview/ImportHubRed.png') no-repeat;
+  }
+
+  &.import-port-dark-gray {
+    background: url('../../../assets/images/milestoneview/ImportPortDarkGrey.png') no-repeat;
+  }
+  &.import-port-dark-orange {
+    background: url('../../../assets/images/milestoneview/ImportPortDarkOrange.png') no-repeat;
+  }
+  &.import-port-green {
+    background: url('../../../assets/images/milestoneview/ImportPortGreen.png') no-repeat;
+  }
+  &.import-port-light-orange {
+    background: url('../../../assets/images/milestoneview/ImportPortLightOrange.png') no-repeat;
+  }
+  &.import-port-red {
+    background: url('../../../assets/images/milestoneview/ImportPortRed.png') no-repeat;
+  }
+
+  &.import-station-dark-gray {
+    background: url('../../../assets/images/milestoneview/ImportStationDarkGrey.png') no-repeat;
+  }
+  &.import-station-dark-orange {
+    background: url('../../../assets/images/milestoneview/ImportStationDarkOrange.png') no-repeat;
+  }
+  &.import-station-green {
+    background: url('../../../assets/images/milestoneview/ImportStationGreen.png') no-repeat;
+  }
+  &.import-station-light-orange {
+    background: url('../../../assets/images/milestoneview/ImportStationLightOrange.png') no-repeat;
+  }
+  &.import-station-red {
+    background: url('../../../assets/images/milestoneview/ImportStationRed.png') no-repeat;
+  }
+
+
+  &.last-airport-dark-gray {
+    background: url('../../../assets/images/milestoneview/LastAirportDarkGrey.png') no-repeat;
+  }
+  &.last-airport-dark-orange {
+    background: url('../../../assets/images/milestoneview/LastAirportDarkOrange.png') no-repeat;
+  }
+  &.last-airport-green {
+    background: url('../../../assets/images/milestoneview/LastAirportGreen.png') no-repeat;
+  }
+  &.last-airport-light-orange {
+    background: url('../../../assets/images/milestoneview/LastAirportLightOrange.png') no-repeat;
+  }
+  &.last-airport-red {
+    background: url('../../../assets/images/milestoneview/LastAirportRed.png') no-repeat;
+  }
+
+  &.last-control-tower-truck-dark-gray {
+    background: url('../../../assets/images/milestoneview/LastControlTowerTruckDarkGrey.png') no-repeat;
+  }
+  &.last-control-tower-truck-dark-orange {
+    background: url('../../../assets/images/milestoneview/LastControlTowerTruckDarkOrange.png') no-repeat;
+  }
+  &.last-control-tower-truck-green {
+    background: url('../../../assets/images/milestoneview/LastControlTowerTruckGreen.png') no-repeat;
+  }
+  &.last-control-tower-truck-light-orange {
+    background: url('../../../assets/images/milestoneview/LastControlTowerTruckLightOrange.png') no-repeat;
+  }
+  &.last-control-tower-truck-red {
+    background: url('../../../assets/images/milestoneview/LastControlTowerTruckRed.png') no-repeat;
+  }
+
+
+  &.last-pol-dark-gray {
+    background: url('../../../assets/images/milestoneview/LastPoDDarkGrey.png') no-repeat;
+  }
+  &.last-pol-dark-orange {
+    background: url('../../../assets/images/milestoneview/LastPoDDarkOrange.png') no-repeat;
+  }
+  &.last-pol-green {
+    background: url('../../../assets/images/milestoneview/LastPoDGreen.png') no-repeat;
+  }
+  &.last-pol-light-orange {
+    background: url('../../../assets/images/milestoneview/LastPoDLightOrange.png') no-repeat;
+  }
+  &.last-pol-red {
+    background: url('../../../assets/images/milestoneview/LastPoDRed.png') no-repeat;
+  }
+
+  &.last-pol-dark-gray {
+    background: url('../../../assets/images/milestoneview/LastPoDDarkGrey.png') no-repeat;
+  }
+
+  &.main-carriage-air-dark-gray {
+    background: url('../../../assets/images/milestoneview/MainCarriageAirDarkGrey.png') no-repeat;
+  }
+  &.main-carriage-air-dark-orange {
+    background: url('../../../assets/images/milestoneview/MainCarriageAirDarkOrange.png') no-repeat;
+  }
+  &.main-carriage-air-green {
+    background: url('../../../assets/images/milestoneview/MainCarriageAirGreen.png') no-repeat;
+  }
+  &.main-carriage-air-light-orange {
+    background: url('../../../assets/images/milestoneview/MainCarriageAirLightOrange.png') no-repeat;
+  }
+  &.main-carriage-air-red {
+    background: url('../../../assets/images/milestoneview/MainCarriageAirRed.png') no-repeat;
+  }
+
+
+  &.main-carriage-ocean-dark-gray {
+    background: url('../../../assets/images/milestoneview/MainCarriageOceanDarkGrey.png') no-repeat;
+  }
+  &.main-carriage-ocean-dark-orange {
+    background: url('../../../assets/images/milestoneview/MainCarriageOceanDarkOrange.png') no-repeat;
+  }
+  &.main-carriage-ocean-green {
+    background: url('../../../assets/images/milestoneview/MainCarriageOceanGreen.png') no-repeat;
+  }
+  &.main-carriage-ocean-light-orange {
+    background: url('../../../assets/images/milestoneview/MainCarriageOceanLightOrange.png') no-repeat;
+  }
+  &.main-carriage-ocean-red {
+    background: url('../../../assets/images/milestoneview/MainCarriageOceanRed.png') no-repeat;
+  }
+
+  &.offload-dark-gray {
+    background: url('../../../assets/images/milestoneview/OffloadDarkGrey.png') no-repeat;
+  }
+
+  &.offload-dark-orange {
+    background: url('../../../assets/images/milestoneview/OffloadDarkOrange.png') no-repeat;
+  }
+
+  &.offload-green {
+    background: url('../../../assets/images/milestoneview/OffloadGreen.png') no-repeat;
+  }
+
+  &.offload-light-orange {
+    background: url('../../../assets/images/milestoneview/OffloadLightOrange.png') no-repeat;
+  }
+
+  &.offload-red {
+    background: url('../../../assets/images/milestoneview/OffloadRed.png') no-repeat;
+  }
+
+  &.onload-dark-gray {
+    background: url('../../../assets/images/milestoneview/OnloadDarkGrey.png') no-repeat;
+  }
+
+  &.onload-dark-orange {
+    background: url('../../../assets/images/milestoneview/OnloadDarkOrange.png') no-repeat;
+  }
+
+  &.onload-green {
+    background: url('../../../assets/images/milestoneview/OnloadGreen.png') no-repeat;
+  }
+
+  &.onload-light-orange {
+    background: url('../../../assets/images/milestoneview/OnloadLightOrange.png') no-repeat;
+  }
+
+  &.onload-red {
+    background: url('../../../assets/images/milestoneview/OnloadRed.png') no-repeat;
+  }
+
+
+
+  &.port-dark-gray {
+    background: url('../../../assets/images/milestoneview/PortDarkGrey.png') no-repeat;
+  }
+  &.port-dark-orange {
+    background: url('../../../assets/images/milestoneview/PortDarkOrange.png') no-repeat;
+  }
+  &.port-green {
+    background: url('../../../assets/images/milestoneview/PortGreen.png') no-repeat;
+  }
+  &.port-light-orange {
+    background: url('../../../assets/images/milestoneview/PortLightOrange.png') no-repeat;
+  }
+  &.port-red {
+    background: url('../../../assets/images/milestoneview/PortRed.png') no-repeat;
+  }
+
+  &.transshipment-port-dark-gray {
+    background: url('../../../assets/images/milestoneview/TransshipmentPortDarkGrey.png') no-repeat;
+  }
+  &.transshipment-port-dark-orange {
+    background: url('../../../assets/images/milestoneview/TransshipmentPortDarkOrange.png') no-repeat;
+  }
+  &.transshipment-port-green {
+    background: url('../../../assets/images/milestoneview/TransshipmentPortGreen.png') no-repeat;
+  }
+  &.transshipment-port-light-orange {
+    background: url('../../../assets/images/milestoneview/TransshipmentPortLightOrange.png') no-repeat;
+  }
+  &.transshipment-port-red {
+    background: url('../../../assets/images/milestoneview/TransshipmentPortRed.png') no-repeat;
+  }
+
+
+}

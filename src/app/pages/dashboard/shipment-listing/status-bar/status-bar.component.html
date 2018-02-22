@@ -1,0 +1,8 @@
+<div class="status-bar">
+    <div class="segment {{segment}}" *ngFor="let segment of value" [style.width]="segmentWidth">
+    </div>
+</div>
+<i *ngIf="data?.problem"
+   [style.margin-left]="data.problemPosition">
+    <img src="assets/images/alert-icon.ico" alt="warning">
+</i>

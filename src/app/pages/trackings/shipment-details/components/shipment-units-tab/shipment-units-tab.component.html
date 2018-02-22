@@ -1,0 +1,17 @@
+<div class="tab-content-container shipping-details-container" *ngIf="data && shipmentUnits">
+    <div class="tab-card">
+        <div class="tab-card-title bordered">Shipment units</div>
+        <div class="row" [class.bordered]="!last" *ngFor="let shipmentUnit of shipmentUnits; let last = last">
+            <div class="col-1">
+                <div class="status-indicator {{STATUS_STYLE_MAPPING[shipmentUnit.ShipmentUnitStatus]}}"></div>
+            </div>
+            <div class="col-9">{{shipmentUnit.Name}}</div>
+            <div class="col-2">
+                <img class="float-right go-to-details-icon" [routerLink]="['/pages', 'trackings', data.id || 0, 'ShipmentUnits', shipmentUnit.id || 0]" src="assets/images/eye-icon.png">
+            </div>
+        </div>
+        <div class="row" *ngIf="!shipmentUnits?.length">
+            <div class="col-12"> Please assign shipment units</div>
+        </div>
+    </div>
+</div>

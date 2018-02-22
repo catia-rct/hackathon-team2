@@ -1,0 +1,41 @@
+<div class="modal-header">
+    <span>Reroute Options</span>
+    <button class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body options-modal">
+    <form [formGroup]="optionsForm" (ngSubmit)="submit(optionsForm)" >
+        <div class="reroute-modal-content">
+            <toaster-container [toasterconfig]="config"></toaster-container>
+            <div class="row separation">
+                <div class="col-md-2 text-left"><span class="status-icon-container"><img src="../../../../../assets/images/ConnectionAirportRed.png" class="status-icon"/></span></div>
+                <div class="col-md-10">
+                    <h4 class="title-modal">{{ modalData.name }}</h4>
+                    <div>Estimated: {{ modalData.estimate }} <span class="delay-container" *ngIf="this.modalData.delay != 0">Delayed +{{ delay }}</span></div>
+                    <div class="green-text">Actual Location: {{ modalData.location }}</div>
+                </div>
+            </div>
+            <div class="separation">
+                <h5 class="title-modal">Choose one of the following options:</h5>
+                <label for="flight-select" >Choose new flight number:</label>&nbsp;
+                <select id="flight-select" name="flights" formControlName="flightNumber">
+                    <option value=""></option>
+                    <option *ngFor="let flight of modalData.flightsList" value="{{ flight.id }}">{{ flight.name }}</option>
+                </select>
+            </div>
+            <div>
+                <label >optional comment (255 character max)</label>
+                <textarea formControlName="description" class="form-control separation" name=""></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="custom-full-btn cancel-btn" (click)="closeModal()"><span class="ion-reply"></span> Cancel</button>
+            </div>
+            <div class="col-md-6">
+                <button type="submit" class="custom-full-btn save-btn"><span class="ion-compose"></span> Save</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,23 @@
+.stat-single-entry{
+  color: #3b4190;
+  .statistics-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    &.purple{
+      background-color: #6a7bba;
+    }
+    &.light-purple{
+      background-color: #8fa9db;
+    }
+    &.blue{
+      background-color: #a7c7f0;
+    }
+  }
+}
+nb-card-header {
+  padding: 0 !important;
+  border: none !important;
+}

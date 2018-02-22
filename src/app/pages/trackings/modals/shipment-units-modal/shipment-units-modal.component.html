@@ -1,0 +1,21 @@
+<div class="modal-header">
+    <span>{{ modalHeader }}</span>
+    <button class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="row" *ngFor="let shipmentUnit of shipmentUnits; let last = last">
+        <div class="col-2">
+            <div class="status-indicator {{STATUS_STYLE_MAPPING[shipmentUnit.status]}} "></div>
+        </div>
+        <div class="col-8 side-borders">{{shipmentUnit.Name}}</div>
+        <div class="col-2">
+            <img class="float-right go-to-details-icon"
+                 src="assets/images/eye-icon.png"
+                 (click)="closeModal()"
+                 [routerLink]="['/pages', 'trackings', shipmentUnitId || 0, 'ShipmentUnits', shipmentUnit.id || 0]"
+            >
+        </div>
+    </div>
+</div>

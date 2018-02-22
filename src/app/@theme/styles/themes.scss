@@ -1,0 +1,287 @@
+// @nebular theming framework
+@import '~@nebular/theme/styles/theming';
+// @nebular out of the box themes
+@import '~@nebular/theme/styles/themes';
+
+// which themes you what to enable (empty to enable all)
+$nb-enabled-themes: (default);
+
+$nb-themes: nb-register-theme((
+ // app wise variables for each theme
+  color-fg-text: #818181, 
+  sidebar-header-height: initial,
+  layout-content-width: 1400px,
+  header-shadow: none,
+  menu-bg: #B5B9BD,
+  menu-active-fg: #000,
+  menu-item-separator: rgba(#9CC5AF, 0.3),
+  menu-icon-font-size: 2rem,
+  menu-icon-color: #7E8385, 
+  menu-icon-active-color: #808187,
+  menu-submenu-fg: #7E8385,
+  menu-group-fg: #7E8385,
+  user-menu-border: #808187,
+  user-menu-active-bg: #808187,
+  radius: 0,
+  font-main: Roboto,
+  font-secondary: Roboto,
+  layout-padding: 0,
+  layout-medium-padding: 0,
+  layout-small-padding: 0,
+  card-shadow: none,
+  smart-table-header-bg: #F9F9F9,
+  smart-table-header-fg: #9D9D9D,
+  form-control-selected-border-color: #9D9D9D,
+  smart-table-paging-bg-active: #9D9D9D,
+  form-control-border-radius: 5px,
+  smart-table-bg-even: #ffffff,
+  modal-separator: #ffffff,
+  tabs-font-family: 'Roboto',
+  tabs-font-size: '16px',
+  tabs-fg: #9ca2ff,
+  tabs-selected: #EBEEF2,
+  btn-border-radius: '5px',
+  btn-info-bg: #B4B6D6,
+  header-padding: 0,
+  card-padding: 0,
+  sidebar-padding: 0 0 1.25rem,
+), default, default);
+
+//Upnetix changes
+nb-sidebar.menu-sidebar .main-container {
+  background: nb-theme(menu-bg) !important;
+}
+
+.logos-container img {
+  display: inline-block;
+  padding: 13px 10px;
+  border-right: 1px solid nb-theme(separator);
+
+  &:first-of-type { max-width: 255px;}
+}
+
+.welcome-message {
+  display: inline-block;
+  padding-left: 5px;
+  font-size: 1.8rem;
+  vertical-align: middle;
+  font-weight: 100;
+}
+
+nb-user .info-container .user-name {
+  display: none;
+}
+
+.white-pad {
+  background: #fff;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4,
+.col-md-5, .col-md-6, .col-md-7, .col-md-8,
+.col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  padding: 0 !important;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.segment,
+.status-indicator {
+  &.planned {
+    background-color: #C8C8C8;
+  }
+  &.completed {
+    background-color: #A7BF73;
+  }
+  &.not-ok {
+    background-color: #D17379;
+  }
+  &.in-progress {
+    background-color: #6774A8;
+  }
+}
+// full height - header height - trackings header height
+$trackings-full-height: calc(100vh - 57px - 76px);
+
+.google-map-test {
+  //half of height
+  height: calc(#{$trackings-full-height} / 2);
+}
+
+.shipping-details-container {
+  //half of height - tabset header height
+  max-height: calc((#{$trackings-full-height} / 2) - 60px);
+  overflow-y: scroll;
+}
+
+.milestone-view-wrapper {
+  height: calc(#{$trackings-full-height} - 150px);
+}
+
+.delay-container {
+  display: inline-block;
+  padding: 2px 6px;
+  color: #fff;
+  border-radius: 5px;
+  background: #D17379;
+  font-size: 0.7rem;
+  vertical-align: middle;
+}
+
+.delay_event_overlay {
+  position: absolute;
+  cursor: pointer;
+  width: 80px;
+  height: auto;
+  background: #D17379;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.55rem;
+}
+
+.options_button {
+  position: absolute;
+}
+
+nb-layout-header {
+  box-shadow: 0px 1px 8px rgba(#5d5d5d, 0.5) !important
+}
+
+nb-card-header { padding: 1.25rem !important; }
+
+ul.menu-items {
+  box-shadow: 0 10px 20px rgba(21, 20, 20, 0.5);
+
+  li a:hover {
+    background: #7C7D8A !important; 
+    color: #fff !important;
+  }
+  li a.active:hover {
+    background: #FFF !important;
+    color: #000 !important;
+  }
+}
+
+ngx-header,
+.logo-containter,
+.logos-container,
+ngx-header nb-action,
+ngx-header nb-action .icon-container,
+.buttons-container,
+.header-buttons{ height: 100% !important; }
+
+.buttons-container {
+  font-size: 0;
+  text-align: right;
+}
+
+.header-buttons {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  border: none;
+  border-left: 1px solid nb-theme(separator);
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.avatar-zone {
+  overflow: hidden;
+  display: inline-block;
+  width: 76px;
+  height: 76px;
+  vertical-align: bottom;
+  border-left: 1px solid nb-theme(separator);
+
+  img {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+shipment-details nb-tabset ul {
+  padding: 0 !important;
+
+  li {
+    border-right: 1px solid #ebeef2;
+
+    a:before {
+      display: none !important;
+    }
+  }
+}
+
+.nb-theme-default nb-menu ul.menu-items { margin-top: -1px !important; }
+
+ngb-modal-window ng-component .modal-header {
+  height: 70px !important;
+  line-height: 70px !important;
+  padding: 0 20px 0 !important;
+
+  .close { margin: 0 !important; }
+
+  span {
+    font-size: 30px;
+    font-weight: 100;
+  }
+}
+
+.custom-full-btn {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  line-height: 3rem;
+  background: #FFF;
+  color: #B4B6D6;
+  border: none;
+  border-top: 1px solid #cdcdcd;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #B4B6D6;
+    color: #fff;
+  }
+
+  &.cancel-btn {
+    text-align: center;
+    background: #F9F9F9;
+    color: #9D9D9D;
+
+    &.hover {
+      background: #F9F9F9;
+      color: #9D9D9D;
+    }
+  }
+
+  &.save-btn {
+    text-align: center;
+    background: #B4B6D6;
+    color: #FFF;
+
+    &.hover {
+      background: #B4B6D6;
+      color: #FFF;
+    }
+  }
+}
+
+.nb-theme-default .modal-content { border: none !important; }
+
+.modal-dialog.modal-lg { width: 600px !important; }
